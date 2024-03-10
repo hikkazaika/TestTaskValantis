@@ -1,0 +1,50 @@
+.catalog {
+	width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	gap: 25px;
+	justify-content: space-evenly;
+}
+
+.card {
+	background: #ab5f5f;
+	padding: 15px;
+	border-radius: 25px;
+	min-width: 320px;
+}
+
+.pagination {
+	margin: 50px 0;
+	display: flex;
+	gap: 10px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.pagList {
+	display: contents;
+}
+
+.item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	min-width: 400px;
+	height: 185px;
+	border-radius: 25px;
+	background: linear-gradient(-45deg, #ff9494 0%, #ab5f5f 50%, #ab5f5f 100%);
+	background-size: 400% 400%;
+	animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+	0% {
+		background-position: 0% 0%;
+	}
+	100% {
+		background-position: -125% 0%;
+	}
+}
